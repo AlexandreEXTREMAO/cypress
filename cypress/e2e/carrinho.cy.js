@@ -1,13 +1,13 @@
 describe('Carrinho', () => {
     it('Adicionar produto ao carrinho com sucesso', () =>{
         // Arrange
-        cy.visit('https://www.saucedemo.com/')
+        cy.visit('https://www.saucedemo.com/v1/index.html')
 
         cy.get('[data-test="username"]').type('standard_user')
             
         cy.get('[data-test="password"]').type('secret_sauce')
 
-        cy.get('[data-test="login-button"]').click()
+        cy.get('#login-button').click()
 
         // Act
         cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
