@@ -1,6 +1,6 @@
-describe('login',() => {
+describe('login valido',() => {
 
-    it('Realizar login com sucesso', () => {
+    it('login com sucesso', () => {
         // Arrange
         cy.visit('https://www.saucedemo.com/v1/index.html')
 
@@ -15,7 +15,11 @@ describe('login',() => {
         cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html')
     })
 
-    it.skip('Realizar login informando credenciais inválidas', () =>{
+})
+
+describe('login invalido',() => {
+
+    it('login invalidado com sucesso', () => {
         // Arrange
         cy.visit('https://www.saucedemo.com/v1/index.html')
         
@@ -35,4 +39,30 @@ describe('login',() => {
 
         cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html')
     })
+
+})
+
+describe('login bloqueado',() => {
+
+    it('login bloqueado com sucesso', () => {
+        // Arrange
+        cy.visit('https://www.saucedemo.com/v1/index.html')
+
+        // Act
+        cy.get('[data-test="username"]').type('locked_out_user')
+            
+        cy.get('[data-test="password"]').type('secret_sauce')
+
+        cy.get('#login-button').click()
+
+        // Assert
+        cy.get('[data-test="error"]')
+            .should(
+                'contain.text',
+                'Sorry, this user has been locked out.'
+            )
+
+        cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html')
+    })
+
 })
