@@ -1,5 +1,5 @@
 describe('Carrinho', () => {
-    it.skip('Adicionar produto ao carrinho com sucesso', () =>{
+    it('Adicionar produto ao carrinho com sucesso', () =>{
         // Arrange
         cy.visit('https://www.saucedemo.com/v1/index.html')
 

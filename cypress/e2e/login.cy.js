@@ -15,7 +15,7 @@ describe('login',() => {
         cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html')
     })
 
-    it.skip('Realizar login informando credenciais inválidas', () =>{
+    it('Realizar login informando credenciais inválidas', () =>{
         // Arrange
         cy.visit('https://www.saucedemo.com/v1/index.html')
         
