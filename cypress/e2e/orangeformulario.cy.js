@@ -21,11 +21,11 @@ describe('login',() => {
         cy.get(':nth-child(1) > .orangehrm-tabs-item').click()
 
         //Preenchendo as minhas informações
-        cy.get('.--name-grouped-field > :nth-child(1) > :nth-child(2) > .oxd-input').clear().click().type('Alexandre');
-        cy.get('.--name-grouped-field > :nth-child(1) > :nth-child(2) > .oxd-input').clear().click().type('Matheus');
-        cy.get(':nth-child(3) > :nth-child(2) > .oxd-input').clear().click().type('Brito');
-        cy.get(':nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().click().type('01');
-        cy.get(':nth-child(3) > :nth-child(1) > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().click().type('001');
+        cy.get('input[name="firstName"]').clear().type('Alexandre');
+        cy.get('input[name="middleName"]').clear().type('Matheus');
+        cy.get('input[name="lastName"]').clear().type('Brito');
+        cy.get(':nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('123');
+        cy.get(':nth-child(3) > :nth-child(1) > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('1234');
         cy.get(':nth-child(2) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().click().type('123456789');
         cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-date-wrapper > .oxd-date-input > .oxd-input').clear().click().type('1997-05-18');
         cy.get('label').contains('Nationality').parent().parent().find('.oxd-select-text').click();
