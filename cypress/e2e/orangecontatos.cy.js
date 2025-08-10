@@ -29,8 +29,14 @@ describe('login',() => {
         cy.get(':nth-child(5) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('63100-999');
         cy.get('label').contains('Country').parent().parent().find('.oxd-select-text').click();
         cy.contains('.oxd-select-option', 'Brazil').click();
+        cy.get(':nth-child(6) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('8533334444');
+        cy.get(':nth-child(6) > .oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('8433334444');
+        cy.get(':nth-child(6) > .oxd-grid-3 > :nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('843-333-4444');
+        cy.get(':nth-child(9) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('teste@hotmail.com');
+        cy.get(':nth-child(9) > .oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('teste2@hotmail.com');
+        cy.get('.oxd-form-actions > .oxd-button').click();
+        cy.wait(3000);
 
-       
                 
     })
 
