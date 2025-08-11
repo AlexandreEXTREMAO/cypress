@@ -35,7 +35,7 @@ describe('login',() => {
         cy.contains('.oxd-select-dropdown .oxd-select-option', 'O+').scrollIntoView().click();
         cy.get('.orangehrm-card-container > .oxd-form > .oxd-form-row > .oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().click().type('185');
         cy.get(':nth-child(1) > .oxd-form > .oxd-form-actions > .oxd-button').click();
-        
+                
     })
 
 })

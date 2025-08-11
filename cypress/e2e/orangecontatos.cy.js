@@ -35,8 +35,7 @@ describe('login',() => {
         cy.get(':nth-child(9) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('teste@hotmail.com');
         cy.get(':nth-child(9) > .oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('teste2@hotmail.com');
         cy.get('.oxd-form-actions > .oxd-button').click();
-        cy.wait(3000);
-
+        cy.wait(3000);  
                 
     })
 
