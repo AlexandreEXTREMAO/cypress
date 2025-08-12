@@ -1,4 +1,4 @@
-describe('Carrinho', () => {
+describe('Quadros Kanban', () => {
     it('Visitando site testes kukac', () =>{
 
         // Testando em outros dispositivos
@@ -29,7 +29,7 @@ describe('Carrinho', () => {
 })
     })
 
-//describe('Kanban App - Testes Básicos', () => {
+//describe('Acessando o site', () => {
     //beforeEach(() => {
         //cy.visit('https://kanban-dusky-five.vercel.app/')
         //})
