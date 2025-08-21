@@ -12,9 +12,9 @@ Foram realizados testes em **três sites** com fluxos distintos:
 ## 🔎 Cenários implementados
 
 Site |	Cenários testados
-Saucedemo |	Login válido e inválido, adicionar produto ao carrinho, validar checkout.
-OrangeHRM |	Login válido e inválido, acesso ao dashboard, busca de informações no menu, preencher informações.
-Kanban |	Criar nova tarefa, editar título, mover tarefas entre colunas.
+- Saucedemo |	Login válido e inválido, adicionar produto ao carrinho, validar checkout.
+- OrangeHRM |	Login válido e inválido, acesso ao dashboard, busca de informações no menu, preencher informações.
+- Kanban |	Criar nova tarefa, editar título, mover tarefas entre colunas.
 
 ---
 
@@ -24,3 +24,4 @@ VSCode + Cypress
 - Abra o VSCode
 - No terminal digite: npx cypress open  
 - Clone o repositório:  https://github.com/AlexandreEXTREMAO/cypress.git
+
